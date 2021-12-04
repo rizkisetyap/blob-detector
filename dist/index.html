@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App| Blob Detector</title>
+    <script type="module" crossorigin src="/assets/index.6a17332d.js"></script>
+    <link rel="stylesheet" href="/assets/index.ff96dfcc.css">
+  </head>
+  <body class="bg-gray-100 max-h-screen">
+    <main
+      class="
+        container
+        max-w-lg
+        mx-auto
+        shadow-md
+        rounded-lg
+        bg-white
+        pb-6
+        overflow-y-auto
+      "
+    >
+      <h1 class="text-2xl text-center font-bold mt-8 mb-6 text-gray-600">
+        Blob Detector
+      </h1>
+      <form id="main-form" class="max-w-md mx-auto">
+        <input
+          class="block w-full border rounded-md text-base px-3 py-2"
+          type="file"
+          name="image"
+          accept="image/*"
+          id="image"
+        />
+        <div class="flex py-2 justify-between items-center">
+          <button
+            class="
+              inline-block
+              font-bold
+              text-base
+              bg-blue-500
+              text-white
+              my-5
+              px-6
+              py-2
+              rounded-md
+            "
+            type="submit"
+          >
+            Detect
+          </button>
+          <button
+            class="
+              inline-block
+              font-bold
+              text-base
+              bg-red-500
+              text-white
+              my-5
+              px-6
+              py-2
+              rounded-md
+            "
+            type="reset"
+            onclick="location.reload()"
+          >
+            reset
+          </button>
+        </div>
+      </form>
+      <div class="grid grid-cols-1 gap-x-4">
+        <p class="px-4" id="blob-count"></p>
+        <div
+          id="content"
+          class="flex justify-evenly items-center my-4 border px-4"
+        >
+          <div class="space-y-2" id="imgpreview"></div>
+          <div class="space-y-2" id="imgresult"></div>
+        </div>
+      </div>
+    </main>
+    
+  </body>
+</html>
