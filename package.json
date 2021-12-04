@@ -1,0 +1,19 @@
+{
+  "name": "blob-detector",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
+  }
+}
